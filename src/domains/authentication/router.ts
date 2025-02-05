@@ -1,8 +1,9 @@
 import type { RouteRecordRaw } from "vue-router";
+import LoginView from "./views/LoginView.vue"
 
-export const router: RouteRecordRaw[] =  [
+export const routes: RouteRecordRaw[] =  [
     {
-        "path": "/",
-        component: () => import("./views/LoginView.vue")
+        "path": "/login",
+        component: LoginView
     }
 ]

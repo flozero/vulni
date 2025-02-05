@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto flex flex-col items-center justify-center h-full">
+    <DefaultLayout>
         <Card class="w-full max-w-sm">
             <CardHeader>
                 <CardTitle class="text-2xl">
@@ -13,11 +13,11 @@
                 <form @submit.prevent="onAuth" class="grid gap-4">
                     <div class="grid gap-2">
                         <Label for="email">Email</Label>
-                        <Input id="email" type="email" placeholder="m@example.com" required v-model="email" />
+                        <Input :disabled="is_loading" id="email" type="email" placeholder="m@example.com" required v-model="email" />
                     </div>
                     <div class="grid gap-2">
                         <Label for="password">Password</Label>
-                        <Input id="password" type="password" required v-model="password" />
+                        <Input :disabled="is_loading" id="password" type="password" required v-model="password" />
                     </div>
                     <div class="text-right">
                         <Button :disabled="is_loading" type="submit">
@@ -32,7 +32,7 @@
                 </form>
             </CardContent>
         </Card>
-    </div>
+    </DefaultLayout>
 </template>
 
 <script setup lang="ts">
@@ -46,6 +46,7 @@ import {
     LoaderCircle
 } from "lucide-vue-next"
 import { useRouter } from 'vue-router';
+import DefaultLayout from '../components/DefaultLayout.vue'
 
 const fakePromise = () => new Promise((resolve) => setTimeout(() => resolve("ok"), 2000))
 

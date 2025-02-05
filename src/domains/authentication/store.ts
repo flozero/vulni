@@ -22,6 +22,7 @@ export const useAuthenticationStore = defineStore("authentication", () => {
 
     return {
         logout,
-        login
+        login,
+        user
     }
 })
