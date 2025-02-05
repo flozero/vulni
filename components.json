@@ -13,6 +13,6 @@
   "framework": "vite",
   "aliases": {
     "components": "@/domains/shared/components",
-    "utils": "@/lib/utils"
+    "utils": "@/domains/shared/utils/utils"
   }
 }

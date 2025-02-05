@@ -2,13 +2,13 @@
 import type { HTMLAttributes } from 'vue'
 import { cn } from '@/domains/shared/utils/utils'
 
-const props = defineProps<{
+interface SkeletonProps {
   class?: HTMLAttributes['class']
-}>()
+}
+
+const props = defineProps<SkeletonProps>()
 </script>
 
 <template>
-  <p :class="cn('text-sm text-muted-foreground', props.class)">
-    <slot />
-  </p>
+  <div :class="cn('animate-pulse rounded-md bg-muted', props.class)" />
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <Button>test</Button>
+  <VulnerabilityView></VulnerabilityView>
 </template>
 
 <script setup lang="ts">
-  import { Button } from "@/domains/shared/components/ui/button"
+import VulnerabilityView from '@/domains/vulnerability/views/VulnerabilityView.vue';
 </script>
