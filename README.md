@@ -2,7 +2,7 @@
 
 ## Wireframe
 
-![Image](https://github.com/user-attachments/assets/0ae0491b-f9da-4fe8-9515-40e375dc9719)
+![Image](https://github.com/user-attachments/assets/2a113ed4-2020-408f-b2cf-d0a641c51175)
 
 ## Architecture
 
@@ -11,17 +11,12 @@
     - views
     - router
     - utils
-    - each domain is responsible of its own test suits
     - store
-
 
 ## Product
 
 - An auth page
-- An home page with list of package.json.
 - A package json view
-
-## If time preview of the package json vulnerability
 
 ## Tech
 
@@ -33,5 +28,5 @@
 
 ## Setup
 
-- npm install
-- npm run dev
+- `npm install`
+- `npm run dev`
