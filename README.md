@@ -1,5 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# Check your project vulnerability with Vulni
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Wireframe
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+![Image](https://github.com/user-attachments/assets/0ae0491b-f9da-4fe8-9515-40e375dc9719)
+
+## Architecture
+
+- domain driven. A domain will have:
+    - components
+    - views
+    - router
+    - utils
+    - each domain is responsible of its own test suits
+    - store
+
+
+## Product
+
+- An auth page
+- An home page with list of package.json.
+- A package json view
+
+## If time preview of the package json vulnerability
+
+## Tech
+
+- vue 3
+- tailwind
+- shadcn
+- vue-router
+- lucid icon
+
+## Setup
+
+- npm install
+- npm run dev
